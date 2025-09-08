@@ -5,7 +5,7 @@ body {
     header {
       height: 100vh;
       /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080?blur=2'); */
-      background-image: url(/img/home.jpg);
+      background-image: url(img/home.jpg);
       /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080?blur=2') center/cover; */
       color: white;
       display: flex;

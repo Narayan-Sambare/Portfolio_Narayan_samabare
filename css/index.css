@@ -4,7 +4,9 @@ body {
     }
     header {
       height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080?blur=2') center/cover;
+      /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080?blur=2'); */
+      background-image: url(/img/home.jpg);
+      /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080?blur=2') center/cover; */
       color: white;
       display: flex;
       align-items: center;
@@ -25,9 +27,16 @@ body {
     }
     /* Fade-in animation */
     .fade-in {
-      opacity: 0;
+      /* opacity: 0;
       transform: translateY(20px);
-      transition: all 0.8s ease-in-out;
+      transition: all 0.8s ease-in-out; */
+      opacity: 0;
+      transition: opacity 0.6s ease-in;
+    }
+.fade-in.visible {
+  opacity: 1;
+}
+
     }
     .fade-in.visible {
       opacity: 1;
@@ -55,4 +64,26 @@ body {
 .project-card img:hover {
   transform: scale(1.2);      /* zoom inside card */
   filter: brightness(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .project-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  section {
+    padding: 40px 10px;
+  }
 }

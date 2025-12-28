@@ -37,7 +37,6 @@ body {
   opacity: 1;
 }
 
-    }
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
@@ -86,4 +85,23 @@ body {
   section {
     padding: 40px 10px;
   }
+}
+.project-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.live-demo, .github-code {
+  width: 45%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+.live-demo:hover, .github-code:hover {
+  color: white;
+  /* text-shadow: black 0.1em 0.1em 0.2em!important; */
+  box-shadow:#755800 0.1em 0.1em 0.2em!important; 
 }

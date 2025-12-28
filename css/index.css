@@ -88,13 +88,13 @@ body {
 }
 .project-btn {
   display: flex;
-  width: 100%;
+  width: 100% !important;
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
 }
 .live-demo, .github-code {
-  width: 45%;
+  width: 45% !important;
   padding: 8px 12px;
   border-radius: 5px;
   text-decoration: none;

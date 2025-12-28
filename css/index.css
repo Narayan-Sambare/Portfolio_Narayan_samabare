@@ -2,9 +2,8 @@ body {
       font-family: 'Poppins', sans-serif;
       scroll-behavior: smooth;
     }
-    header {
+  header {
       height: 100vh;
-      /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080?blur=2'); */
       background: url(../img/home.jpg);
       /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080?blur=2') center/cover; */
       color: white;
@@ -12,14 +11,26 @@ body {
       align-items: center;
       justify-content: center;
       text-align: center;
-    }
-    section {
+  }
+  section {
       padding: 60px 0;
-    }
-    .project-card img {
+  }
+  .btn-new{
+     padding: 8px 20px;
+     margin-right: 20px;
+     border-radius: 5px;
+     text-decoration: none;
+     color: #000;
+     background-color: #ffc107;
+     border-color: #ffc107;
+  }
+  .btn-new:hover{
+    box-shadow:#755800 0.1em 0.1em 0.2em!important; 
+  }
+  .project-card img {
       height: 200px;
       object-fit: cover;
-    }
+  }
     footer {
       background: #222;
       color: #aaa;
@@ -27,20 +38,16 @@ body {
     }
     /* Fade-in animation */
     .fade-in {
-      /* opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s ease-in-out; */
       opacity: 0;
       transition: opacity 0.6s ease-in;
     }
 .fade-in.visible {
   opacity: 1;
 }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 .project-card {
   border-radius: 10px;
   position: relative;
@@ -65,6 +72,27 @@ body {
   filter: brightness(1.1);
 }
 
+.project-btn {
+  display: flex;
+  width: 100% !important;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.project-btn .live-demo, .project-btn .github-code {
+  width: 45% !important;
+   }
+header .header-p {
+  margin: 20px auto 0;
+  border-radius: 15px;
+  background: #000000;
+  opacity: 0.6;
+  width: 60%;
+  padding: 20px;
+  box-shadow: 2px 2px 50px #00000063;
+  color: #ffffff;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   header h1 {
@@ -85,23 +113,4 @@ body {
   section {
     padding: 40px 10px;
   }
-}
-.project-btn {
-  display: flex;
-  width: 100% !important;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-.live-demo, .github-code {
-  width: 45% !important;
-  padding: 8px 12px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-}
-.live-demo:hover, .github-code:hover {
-  color: white;
-  /* text-shadow: black 0.1em 0.1em 0.2em!important; */
-  box-shadow:#755800 0.1em 0.1em 0.2em!important; 
 }

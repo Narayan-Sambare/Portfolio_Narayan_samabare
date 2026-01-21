@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-contact",
+  "version": "1.0.0",
+  "description": "Contact form handler for portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "contact",
+    "form",
+    "email"
+  ],
+  "author": "Narayan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^7.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
